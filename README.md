@@ -34,3 +34,16 @@ Some technical notes:
 The name of the table, myapp_person, is automatically derived from some model metadata but can be overridden. See Table names for more details.
 An id field is added automatically, but this behavior can be overridden. See Automatic primary key fields.
 The CREATE TABLE SQL in this example is formatted using PostgreSQL syntax, but it’s worth noting Django uses SQL tailored to the database backend specified in your settings file.
+
+By using Django model we store data in the database conveniently. We can use admin panel of Django to create, update, delete or retrieve fields of a model and various similar operations.
+
+Example of Django model and relationship with the table fields of the database.
+
+
+from django.db import models
+ 
+# Create your models here.
+class GeeksModel(models.Model):
+    title = models.CharField(max_length = 200)
+    description = models.TextField() 
+	
