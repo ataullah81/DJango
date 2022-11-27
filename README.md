@@ -1,5 +1,7 @@
 **Django Model:**
-Model is the interface of data manipulation. It is responsible for maintaining data. It is the logical data structure behind the application and is represented by a database. 
+
+Model is the interface of data manipulation. It is responsible for maintaining data. It is the logical data structure behind the application and is represented by a database.
+
 Django model is the built-in feature that Django uses to create tables, tables.field and contraints.
 Django model is the SQL of database. 
 We need to use django model to create new table in the database. In short if we want to cteate a new table we must cteate a new model.
