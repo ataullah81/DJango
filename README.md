@@ -13,13 +13,10 @@ With all of this, Django gives you an automatically-generated database-access AP
 
 Quick example
 
-This example model defines a Person, which has a first_name and last_name:
+This example model defines a **Person**, which has a **first_name** and **last_name**:
 
-from django.db import models
+![img_2.png](img_2.png)
 
-class Person(models.Model):
-    first_name = models.CharField(max_length=30)
-    last_name = models.CharField(max_length=30)
 first_name and last_name are fields of the model. Each field is specified as a class attribute, and each attribute maps to a database column.
 
 The above Person model would create a database table like this:
@@ -38,10 +35,7 @@ The CREATE TABLE SQL in this example is formatted using PostgreSQL syntax, but i
 By using Django model we store data in the database conveniently. We can use admin panel of Django to create, update, delete or retrieve fields of a model and various similar operations.
 
 Example of Django model and relationship with the table fields of the database.
-
-
-from django.db import models
  
-# Create your models here.
+# Example of model.
 ![img_1.png](img_1.png)
 ![img.png](img.png)
