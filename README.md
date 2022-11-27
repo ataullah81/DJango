@@ -1,5 +1,4 @@
-Django
-Model:
+**Django Model:**
 
 Django model is the built-in feature that Django uses to create tables, tables.field and contraints.
 Django model is the SQL of database. 
