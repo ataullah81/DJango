@@ -22,6 +22,7 @@ This example model defines a **Person**, which has a **first_name** and **last_n
 The above **Person** model would create a database table like this:
 
 ![img_3.png](img_3.png)
+
 Some technical notes:
 
 The name of the table, myapp_person, is automatically derived from some model metadata but can be overridden. See Table names for more details.
