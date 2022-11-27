@@ -47,3 +47,4 @@ class GeeksModel(models.Model):
     title = models.CharField(max_length = 200)
     description = models.TextField() 
 	
+![img.png](img.png)
