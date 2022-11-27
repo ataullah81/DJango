@@ -1,10 +1,14 @@
+MVT (Model-View-Template) is a software design pattern for developing a web application.
+
+**Model**: Model is the interface of data manipulation. It is responsible for maintaining data. It is the logical data structure behind the application and is represented by a database.
+**View**: The view is the user interface, means what we see in our browser when browse a website. It is made by HTML/CSS/Javascript.
+
 **Django Model:**
 
-Model is the interface of data manipulation. It is responsible for maintaining data. It is the logical data structure behind the application and is represented by a database.
 
-Django model is the built-in feature that Django uses to create tables, tables.field and contraints.
+Django model is the built-in feature that Django uses to create tables, tables.field and constraints.
 Django model is the SQL of database. 
-We need to use django model to create new table in the database. In short if we want to cteate a new table we must cteate a new model.
+We need to use django model to create new table in the database. In short if we want to create a new table we must create a new model.
 
 The basics:
 
