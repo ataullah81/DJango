@@ -1,6 +1,7 @@
 MVT (Model-View-Template) is a software design pattern for developing a web application.
 
 **Model**: Model is the interface of data manipulation. It is responsible for maintaining data. It is the logical data structure behind the application and is represented by a database.
+
 **View**: The view is the user interface, means what we see in our browser when browse a website. It is made by HTML/CSS/Javascript.
 
 **Django Model:**
