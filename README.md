@@ -43,8 +43,5 @@ Example of Django model and relationship with the table fields of the database.
 from django.db import models
  
 # Create your models here.
-class GeeksModel(models.Model):
-    title = models.CharField(max_length = 200)
-    description = models.TextField() 
-	
+![img_1.png](img_1.png)
 ![img.png](img.png)
