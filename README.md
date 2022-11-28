@@ -4,8 +4,9 @@ MVT (Model-View-Template) is a software design pattern for developing a web appl
 
 **View**: The view is the user interface, means what we see in our browser when browse a website. It is made by HTML/CSS/Javascript.
 
-**Django Model:**
+**Template:** Template is the structure or layout of user interface. 
 
+**Django Model:**
 
 Django model is the built-in feature that Django uses to create tables, tables.field and constraints.
 Django model is the SQL of database. 
