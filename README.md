@@ -6,7 +6,7 @@ MVT (Model-View-Template) is a software design pattern for developing a web appl
 
 **Template:** Template is the structure or layout of user interface. 
 
-**Django Model:**
+# **Django Model:**
 
 Django model is the built-in feature that Django uses to create tables, tables.field and constraints.
 Django model is the SQL of database. 
@@ -44,7 +44,7 @@ Example of Django model and relationship with the table fields of the database.
 ![img_1.png](img_1.png)
 ![img.png](img.png)
 
-**Django View:**
+# **Django View:**
 
 Django Views are Python function that takes web request (http requests) and returns a web response.
 This response can be the HTML contents of a Web page, or a redirect, or a 404 error, or an XML document, or an image, anything that a web browser can display. 
