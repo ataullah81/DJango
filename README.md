@@ -30,7 +30,7 @@ The above **Person** model would create a database table like this:
 
 ![img_3.png](img_3.png)
 
-Some technical notes:
+**Some technical notes:**
 
 The name of the table, myapp_person, is automatically derived from some model metadata but can be overridden. See Table names for more details.
 An id field is added automatically, but this behavior can be overridden. See Automatic primary key fields.
@@ -43,3 +43,10 @@ Example of Django model and relationship with the table fields of the database.
 # Example of model.
 ![img_1.png](img_1.png)
 ![img.png](img.png)
+
+Django View:
+
+Django Views are Python function that takes web request (http requests) and returns a web response.
+This response can be the HTML contents of a Web page, or a redirect, or a 404 error, or an XML document, or an image, anything that a web browser can display. 
+Django views are part of the user interface — they usually render the HTML/CSS/Javascript in your Template files into what you see in your browser when you render a web page. 
+![img_4.png](img_4.png)
