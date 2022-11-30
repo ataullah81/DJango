@@ -44,9 +44,19 @@ Example of Django model and relationship with the table fields of the database.
 ![img_1.png](img_1.png)
 ![img.png](img.png)
 
-Django View:
+**Django View:**
 
 Django Views are Python function that takes web request (http requests) and returns a web response.
 This response can be the HTML contents of a Web page, or a redirect, or a 404 error, or an XML document, or an image, anything that a web browser can display. 
 Django views are part of the user interface — they usually render the HTML/CSS/Javascript in your Template files into what you see in your browser when you render a web page. 
 ![img_4.png](img_4.png)
+
+# **Django Templates:**
+
+Templates are the third and most important part of Django’s MVT Structure. A template in Django is basically written in HTML, CSS, and Javascript in a .html file.
+
+A template is a text file. It can generate any text-based format (HTML, XML, CSV, etc.).
+A template contains variables, which get replaced with values when the template is evaluated, and tags, which control the logic of the template.
+Below is a minimal template that illustrates a few basics. 
+![img_5.png](img_5.png)
+
