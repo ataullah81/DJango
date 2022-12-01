@@ -69,9 +69,30 @@ Here is a sample of URLconf.
 
 Example requests:
 
-A request to /articles/2005/03/ would match the third entry in the list. Django would call the function views.month_archive(request, year=2005, month=3).
+A request to /articles/2005/03/ would match the third entry in the list. Django would call the function 
+views.month_archive(request, year=2005, month=3).
 /articles/2003/ would match the first pattern in the list, not the second one, because the patterns are tested in order, and the first one is the first test to pass.
-Feel free to exploit the ordering to insert special cases like this. Here, Django would call the function views.special_case_2003(request)
+Feel free to exploit the ordering to insert special cases like this. Here, Django would call the function 
+views.special_case_2003(request)
 /articles/2003 would not match any of these patterns, because each pattern requires that the URL end with a slash.
 /articles/2003/03/building-a-django-site/ would match the final pattern. Django would call the function
 views.article_detail(request, year=2003, month=3, slug="building-a-django-site").
+
+# **Django Forms:**
+
+If we make database-driven app, most of the cases we need to use forms that takes input from the users, and we use that information for logical operations in databases.
+For example registering a user by taking username, password, email, names etc.
+Django maps the fields defined on Django forms into HTML input fields.
+Django handles three distinct parts of the work involved in forms:
+
+-- preparing and restructuring data to make it ready for rendering
+-- creating HTML forms for the data
+-- receiving and processing submitted forms and data from the client
+![img_7.png](img_7.png)
+
+
+# **Form Validation:**
+
+Data validation happens when we take data from the users, and forms should be able to validate data as per required. For example when user is asked to 
+enter email form should be able to varify that entered input is an email address. For username and password may have condition too, for example if user is 
+asked to put minimum length of them, then form should be able to varify that it fulfill those requirements.
