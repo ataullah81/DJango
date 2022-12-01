@@ -60,3 +60,18 @@ A template contains variables, which get replaced with values when the template 
 Below is a minimal template that illustrates a few basics. 
 ![img_5.png](img_5.png)
 
+# **Django URL patterns**
+
+Views takes URL request as a parameter from users and return HTTP response. Each view needs to mapped to a corresponding URL pattern.  
+To design URLs for an app we need to create a python module called URLconf. 
+Here is a sample of URLconf.
+![img_6.png](img_6.png)
+
+Example requests:
+
+A request to /articles/2005/03/ would match the third entry in the list. Django would call the function views.month_archive(request, year=2005, month=3).
+/articles/2003/ would match the first pattern in the list, not the second one, because the patterns are tested in order, and the first one is the first test to pass.
+Feel free to exploit the ordering to insert special cases like this. Here, Django would call the function views.special_case_2003(request)
+/articles/2003 would not match any of these patterns, because each pattern requires that the URL end with a slash.
+/articles/2003/03/building-a-django-site/ would match the final pattern. Django would call the function
+views.article_detail(request, year=2003, month=3, slug="building-a-django-site").
