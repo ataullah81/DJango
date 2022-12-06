@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Information Details</title>
+</head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th {
+  background-color: #96D4D4;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 7px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+a:hover{
+    color: rgb(236, 14, 14);
+</style>
+<body>
+<a href="/add-student" class="button">Add</a>
+<!-- <a href="/add-student">Add</a> -->
+    <table>
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Student Name</th>
+                <th>Student Email</th>
+                <th>Student Contact Number</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        {%for student in students%}
+            <tr>
+                <td>{{student.std_id}}</td>
+                <td>{{student.std_name}}</td>
+                <td>{{student.std_email}}</td>
+                <td>{{student.std_contact_number}}</td>
+                <td>
+                    <a href="/edit/{{student.id}}" class="button">Edit</a>
+                  <!--  <a href="/edit/{{student.id}}">Edit</a> -->
+                    <a href="/delete/{{student.id}}" class="button">Delete</a>
+                   <!--  <a href="/delete/{{student.id}}">Delete</a> -->
+                </td>
+
+            </tr>
+        {%endfor%}
+        </tbody>
+    </table>
+</body>
+</html>
