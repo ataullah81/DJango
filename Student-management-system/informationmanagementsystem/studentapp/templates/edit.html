@@ -4,7 +4,34 @@
     <meta charset="UTF-8">
     <title>Student Information Update</title>
 </head>
+<style>
+    .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 3px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+}
+button:hover{
+    color: rgb(236, 14, 14);
+}
+body {
+      display: flex;
+      align-items: left;
+      justify-content: center;
+      margin: 20 auto;
+      height: 90vh;
+      background-color: rgba(190, 179, 117, 0.425);;
+    }
 
+</style>
 <body>
     <form method = "POST" action="/update/{{student.id}}">
         {% csrf_token%}
@@ -41,8 +68,14 @@
                 </div>
             </div>
             <div>
+                <label>Student Date of Birth</label>
                 <div>
-                    <button type="submit">Update</button>
+                    <input type="date" name="std_birth_date" value="{{student.std_birth_date}}">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <button class="button" type="submit">Update</button>
                 </div>
             </div>
         </div>

@@ -16,7 +16,7 @@ th {
   background-color: #4CAF50;
   border: none;
   color: white;
-  padding: 7px 10px;
+  padding: 3px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -24,9 +24,18 @@ th {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px rgb(0,0,0);
 }
 a:hover{
     color: rgb(236, 14, 14);
+    }
+body {
+      align-items: left;
+      justify-content: center;
+      margin: 20 auto;
+      height: 90vh;
+      background-color: rgba(190, 179, 117, 0.425);;
+    }
 </style>
 <body>
 <a href="/add-student" class="button">Add</a>
@@ -38,6 +47,7 @@ a:hover{
                 <th>Student Name</th>
                 <th>Student Email</th>
                 <th>Student Contact Number</th>
+                <th>Student Date of Birth</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -49,6 +59,7 @@ a:hover{
                 <td>{{student.std_name}}</td>
                 <td>{{student.std_email}}</td>
                 <td>{{student.std_contact_number}}</td>
+                <td>{{student.std_birth_date}}</td>
                 <td>
                     <a href="/edit/{{student.id}}" class="button">Edit</a>
                   <!--  <a href="/edit/{{student.id}}">Edit</a> -->
