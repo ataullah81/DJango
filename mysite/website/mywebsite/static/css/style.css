@@ -1,0 +1,125 @@
+
+body {
+    margin: 0;
+    background: rgba(190, 179, 117, 0.425);
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 300;
+
+}
+.menu-bar {
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+header {
+    background-image: linear-gradient(to bottom right,rgb(0, 204, 255), blue, rgb(0, 204, 255) );
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+nav{
+    float: left;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+}
+nav a {
+    color: rgb(186, 202, 221);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav a:hover{
+    color: rgb(236, 14, 14);
+}
+nav a::before{
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: rgb(236, 14, 14);
+    position: absolute;
+    
+    width: 0%;
+    bottom: 0;
+    transition: all case-in-out 300ms;
+    
+}
+nav a:hover::before {
+    width: 100%;
+}
+.topnav-right {
+    float: right;
+}
+
+.topnav-right ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.topnav-right li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+}
+.topnav-right a {
+    color: rgb(186, 202, 221);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.topnav-right a:hover{
+    color: rgb(236, 14, 14);
+}
+.topnav-right a::before{
+        content: '';
+        display: block;
+        height: 3px;
+        background-color: rgb(236, 14, 14);
+        position: absolute;
+        
+        width: 0%;
+        bottom: 0;
+        transition: all case-in-out 200ms;
+        
+    }
+.topnav-right a:hover::before {
+        width: 100%;
+    }
+.search-container{
+    float: right;
+}
+.search-container input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+.search-container button {
+    float: right;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    padding-right: 17px;
+    margin-top: 8px;
+    margin-right: 16px;
+    
+    
+    border: none;
+    cursor: pointer;
+  }
+  
+.search-container button:hover {
+    background: #ccc;
+  }
+  

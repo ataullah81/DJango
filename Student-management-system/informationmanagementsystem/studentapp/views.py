@@ -21,12 +21,12 @@ def addStudent(request):
 
 
 def getAllData(request):
-    students = Student.objects.all()
+    students = Student.objects.all() #  select * from table ;
     return render(request, "show.html", {"students": students})
 
 
 def edit(request, id):
-    student = Student.objects.get(id=id)
+    student = Student.objects.get(id=id)# select * from table where id = id
     return render(request, "edit.html", {"student": student})
 
 

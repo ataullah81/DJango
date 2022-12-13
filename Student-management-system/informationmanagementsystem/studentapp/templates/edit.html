@@ -5,7 +5,7 @@
     <title>Student Information Update</title>
 </head>
 <style>
-    .button {
+    .button, input[type=button] {
   background-color: #4CAF50;
   border: none;
   color: white;
@@ -20,6 +20,10 @@
   box-shadow: 0px 0px 2px 2px rgb(0,0,0);
 }
 button:hover{
+    color: rgb(236, 14, 14);
+}
+
+input[type=button]:hover{
     color: rgb(236, 14, 14);
 }
 body {
@@ -37,7 +41,7 @@ body {
         {% csrf_token%}
         <div>
             <div>
-                <label>Enter Student Details</label>
+                <label><b><h2>Edit Student Details</h2></b></label>
             </div>
 
             <div>
@@ -47,28 +51,34 @@ body {
                 </div>
             </div>
 
-            <div>
-                <label>Student Name</label>
+            <div style="float:left">
+                <label>First Name</label>
                 <div>
-                    <input type="text" name="std_name" value="{{student.std_name}}">
+                    <input type="text" name="std_first_name" value="{{student.std_first_name}}">
+                </div>
+            </div>
+            <div style="float:left">
+                <label>Last Name</label>
+                <div>
+                    <input type="text" name="std_last_name" value="{{student.std_last_name}}">
                 </div>
             </div>
 
             <div>
-                <label>Student Email</label>
+                <label>Email Address</label>
                 <div>
                     <input type="text" name="std_email" value="{{student.std_email}}">
                 </div>
             </div>
 
             <div>
-                <label>Student Contact Number</label>
+                <label>Contact Number</label>
                 <div>
                     <input type="text" name="std_contact_number" value="{{student.std_contact_number}}">
                 </div>
             </div>
             <div>
-                <label>Student Date of Birth</label>
+                <label>Date of Birth</label>
                 <div>
                     <input type="date" name="std_birth_date" value="{{student.std_birth_date}}">
                 </div>
@@ -76,6 +86,7 @@ body {
             <div>
                 <div>
                     <button class="button" type="submit">Update</button>
+                    <input type="button" value="Back" onclick="history.back()">
                 </div>
             </div>
         </div>

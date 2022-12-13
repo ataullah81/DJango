@@ -38,16 +38,17 @@ body {
     }
 </style>
 <body>
-<a href="/add-student" class="button">Add</a>
+<a href="/add-student" class="button">Add New</a>
 <!-- <a href="/add-student">Add</a> -->
     <table>
         <thead>
             <tr>
                 <th>Student ID</th>
-                <th>Student Name</th>
-                <th>Student Email</th>
-                <th>Student Contact Number</th>
-                <th>Student Date of Birth</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email Address</th>
+                <th>Contact Number</th>
+                <th>Date of Birth</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -56,7 +57,8 @@ body {
         {%for student in students%}
             <tr>
                 <td>{{student.std_id}}</td>
-                <td>{{student.std_name}}</td>
+                <td>{{student.std_first_name}}</td>
+                <td>{{student.std_last_name}}</td>
                 <td>{{student.std_email}}</td>
                 <td>{{student.std_contact_number}}</td>
                 <td>{{student.std_birth_date}}</td>
