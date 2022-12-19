@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style_new.css' %}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+          <!--  <a href="/" class="nav-branding">DEV.</a> -->
+                <ul class="nav-menu">
+                    <li class="nav-link"><a href="{% url 'index' %}">Home</a></li>
+                    <li class="nav-link"><a href="{% url 'movies' %}">Movies list</a></li>
+                    <li class="nav-link"><a href="{% url 'about' %}">About</a></li>
+                    <li class="nav-link"><a href="{% url 'youtube' %}">Youtube</a></li>
+
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+</body>
+</html>

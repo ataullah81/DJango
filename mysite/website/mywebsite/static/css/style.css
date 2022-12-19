@@ -1,19 +1,25 @@
 
 body {
-    margin:0;
-    background: rgba(196, 236, 48, 0.425);
 
+    margin: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    background: rgba(196, 236, 48, 0.425);
+    width: 80%;
 
 }
 .menu-bar {
     overflow: hidden;
-
     width: 80%;
     margin: 0 auto;
 
 
 }
 header {
+    overflow: hidden;
+    width: 100%;
+    position:fixed;
+
     background-image: linear-gradient(to bottom right,rgb(146, 201, 214), blue, rgb(0, 204, 255) );
 }
 header::after{
@@ -36,6 +42,7 @@ nav li {
     padding-top: 15px;
     padding-bottom: 15px;
     position: relative;
+
 }
 nav a {
 
@@ -45,6 +52,7 @@ nav a {
     font-style: normal;
     text-decoration: none;
     text-transform: uppercase;
+
 }
 nav a:hover{
     color: rgb(236, 14, 14);

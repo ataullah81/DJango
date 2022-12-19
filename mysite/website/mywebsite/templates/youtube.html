@@ -1,0 +1,46 @@
+
+{% extends 'base.html' %}
+<div class="container">
+{% block content %}
+    <br/>
+    <section>
+        <div class="container">
+            <div class="home">
+                <div>
+                <div>
+                    <label><b><h2>Youtube converter, YouTube to mp3</h2></b></label>
+                </div>
+                </div>
+                <p>{{msg}}</p>
+                <form action="" method="post" class="form">
+                {% csrf_token%}
+
+                <div>
+                <label for="youtube_url">Enter the URL:</label>
+                    <div>
+                        <input type="text" id="youtube_url" name="youtube_url" placeholder="Enter youtube link">
+                    </div>
+                </div>
+                <div>
+                <label for="destination">Enter the destination:</label>
+                    <div>
+                        <input type="text" id="destination" name="destination" placeholder="Enter destination">
+                    </div>
+                </div>
+                    <div>
+                <div>
+                    <!--<button class="button" type="submit">Submit</button>-->
+                    <input type="submit" value="Download">
+                    <input type="button" value="Back" onclick="history.back()">
+                </div>
+
+            </div>
+            </form>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+</div>
+
+
+
