@@ -22,6 +22,9 @@
     {
       "src": "/(.*)",
       "dest": "charityfinder/wsgi.py"
+    },
+    {
+    "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
     }
   ]
 }
